@@ -18,7 +18,7 @@ TerminatorZ is a highly sophisticated and efficient web security tool that scans
 
 # What Makes TerminatorZ Unique:
 
-TerminatorZ is special because it's a highly sophisticated web security tool that uses a combination of cutting-edge technology and expert methodology to scan for various web application vulnerabilities. The tool leverages the power of curl and predefined known payloads to thoroughly test for vulnerabilities and validate their presence.
+TerminatorZ is special because it's a highly sophisticated web security tool in bash, that uses a combination of cutting-edge technology and expert methodology to scan for various web application vulnerabilities. The tool leverages the power of curl and predefined known payloads to thoroughly test for vulnerabilities and validate their presence.
 
 # The Flow & Methodology
 
