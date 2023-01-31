@@ -84,10 +84,13 @@ Scans for various web application vulnerabilities, including:
 ![Screenshot 2023-01-31 at 11 58 25 PM](https://user-images.githubusercontent.com/13942386/215893130-0f73f052-a15a-4bb5-b54b-f5610a272f88.png)
 
 
-
 # Compatibility: 
 
 This tool has been tested on Kali Linux, Ubuntu and MacOS.
+
+# TO DO
+
+A lot will be done and added to it, this is the starting point. If you want to contribute, send me a commit explaining what more / better you are doing, and will credit you if it fits the model of design in mind!
 
 # Disclaimer
 
