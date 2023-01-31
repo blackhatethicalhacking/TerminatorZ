@@ -33,17 +33,29 @@ In conclusion, TerminatorZ is a game-changer in the world of web security. Its c
 Scans for various web application vulnerabilities, including:
 
 • SQL Injection (SQLi)
+
 • Cross-Site Scripting (XSS)
+
 • Cross-Site Request Forgery (CSRF)
+
 • Remote Code Execution (RCE)
+
 • Directory Traversal (DT)
+
 • File Inclusion (FI)
+
 • Sensitive Data Exposure (SDE)
+
 • Server Side Request Forgery (SSRF)
+
 • Shell Injection (SI)
+
 • Broken Access Control (BAC)
+
 • Utilizes tools such as waybackurls, curl, and others for comprehensive vulnerability assessments
+
 • Lightweight and fast, delivering results in real-time directly to the terminal
+
 • Only saves and reports vulnerabilities, making it easy to prioritize and remediate vulnerabilities in a timely manner
 
 # Requirements:
