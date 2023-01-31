@@ -52,6 +52,8 @@ Scans for various web application vulnerabilities, including:
 
 • Broken Access Control (BAC)
 
+• Generates Random Sun Tzu Quote for Red Teamers, Checks if you are connected to the Internet too!
+
 • Utilizes tools such as waybackurls, curl, and others for comprehensive vulnerability assessments
 
 • Lightweight and fast, delivering results in real-time directly to the terminal
