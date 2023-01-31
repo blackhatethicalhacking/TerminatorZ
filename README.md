@@ -81,7 +81,8 @@ Scans for various web application vulnerabilities, including:
 **Main Menu**
 
 
-![Main](https://user-images.githubusercontent.com/13942386/214919576-c306a78f-419d-4110-8759-726ae188754c.png)
+![Screenshot 2023-01-31 at 11 58 25 PM](https://user-images.githubusercontent.com/13942386/215893130-0f73f052-a15a-4bb5-b54b-f5610a272f88.png)
+
 
 
 # Compatibility: 
