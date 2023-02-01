@@ -89,7 +89,7 @@ Scans for various web application vulnerabilities, including:
 
 This tool has been tested on Kali Linux, Ubuntu and MacOS.
 
-# To DO
+# To Do
 
 A lot will be done and added to it, this is the starting point. If you want to contribute, send me a commit explaining what more / better you are doing, and will credit you if it fits the model of design in mind!
 
