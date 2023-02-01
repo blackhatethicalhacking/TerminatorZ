@@ -66,6 +66,8 @@ Scans for various web application vulnerabilities, including:
 
 • cURL: This tool is commonly pre-installed on Kali Linux and Ubuntu, but can be installed by running apt-get install curl on Ubuntu or brew install curl on MacOS
 
+• httpx: This tool is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library.
+
 # Installation
 
 `git clone https://github.com/blackhatethicalhacking/TerminatorZ.git`
@@ -80,8 +82,7 @@ Scans for various web application vulnerabilities, including:
 
 **Main Menu**
 
-
-![Screenshot 2023-01-31 at 11 58 25 PM](https://user-images.githubusercontent.com/13942386/215893130-0f73f052-a15a-4bb5-b54b-f5610a272f88.png)
+<img width="958" alt="Screenshot 2023-02-01 at 7 36 42 PM" src="https://user-images.githubusercontent.com/13942386/216119836-2551058d-e69c-4590-b208-ed0cc996dae6.png">
 
 
 # Compatibility: 
