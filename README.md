@@ -40,6 +40,8 @@ Scans for various web application vulnerabilities, including:
 
 • Remote Code Execution (RCE)
 
+• Log4J
+
 • Directory Traversal (DT)
 
 • File Inclusion (FI)
