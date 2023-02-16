@@ -28,7 +28,7 @@ The tool starts by asking the user to input the domain they wish to scan. It the
 
 The tool's methodology is carefully designed to ensure that each type of vulnerability is checked specifically and thoroughly. The tool employs a highly analytical and methodical approach to the scanning process, which results in the identification of even the most elusive vulnerabilities. The tool's logic is designed to be highly efficient and effective, making it the ultimate choice for red team security experts and web security professionals.
 
-In conclusion, TerminatorZ is a game-changer in the world of web security. Its combination of technology, methodology, and expert logic makes it the ultimate tool for identifying and mitigating web application vulnerabilities.
+In conclusion, TerminatorZ is a game-changer in the world of web security. Its combination of technology, methodology, and expert logic makes it the ultimate tool for identifying and mitigating web application vulnerabilities. Speed is sometimes needed, if you want more tools that do not focus on speed, please make sure to check our other ones :)
 
 # Features:
 
