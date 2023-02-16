@@ -18,7 +18,9 @@ TerminatorZ is a highly sophisticated and efficient web security tool that scans
 
 # What Makes TerminatorZ Unique:
 
-TerminatorZ is special because it's a highly sophisticated web security tool in bash, that uses a combination of cutting-edge technology and expert methodology to scan for various web application vulnerabilities. The tool leverages the power of curl and predefined known payloads to thoroughly test for vulnerabilities and validate their presence.
+TerminatorZ is special because it's a highly customized for quick and speed high priority known CVES. The script then reads each URL from urls.txt and checks for various vulnerabilities including RCE, CSRF, LFI, open redirect, Log4J, RFI, path traversal, and SQL injection. For each vulnerability, the script performs a test by sending a specific HTTP request and looking for a specific response.
+
+If the vulnerability is detected, the script will write a message to the domain.txt file indicating that the URL is vulnerable. If the vulnerability is not detected, the script will write a message indicating that the URL is not vulnerable
 
 # The Flow & Methodology
 
