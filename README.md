@@ -66,11 +66,13 @@ Scans for various web application vulnerabilities, including:
 
 # Requirements:
 
-• waybackurls: This tool can be installed by running go get github.com/tomnomnom/waybackurls
+• waybackurls: This tool can be installed by running `go get github.com/tomnomnom/waybackurls`
 
-• cURL: This tool is commonly pre-installed on Kali Linux and Ubuntu, but can be installed by running apt-get install curl on Ubuntu or brew install curl on MacOS
+• cURL: This tool is commonly pre-installed on Kali Linux and Ubuntu, but can be installed by running `apt-get install curl` on Ubuntu or `brew install curl` on MacOS
 
-• httpx: This tool is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library.
+• httpx: is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryable http library. To install it: `go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest`
+
+• lolcat: `pip install lolcat` for rainbow beauty
 
 # Installation
 
