@@ -66,7 +66,7 @@ Scans for various web application vulnerabilities, including:
 
 # Requirements:
 
-• waybackurls: This tool can be installed by running `go get github.com/tomnomnom/waybackurls`
+• waybackurls: This tool can be installed by running `go install github.com/tomnomnom/waybackurls@latest`
 
 • cURL: This tool is commonly pre-installed on Kali Linux and Ubuntu, but can be installed by running `apt-get install curl` on Ubuntu or `brew install curl` on MacOS
 
