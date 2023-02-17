@@ -52,6 +52,7 @@ for ((i=0; i<5; i++)); do
     echo -ne "${R}00 ${G}11 ${Y}01 ${B}10 ${P}11 ${C}00 ${W}10 ${G}01 ${P}11 ${B}00 ${Y}01 ${C}10\r"
     sleep 0.2
 done
+echo -e "\033[2J\033[?25h" # reset screen
 echo "Enter the domain: "
 read domain
 
