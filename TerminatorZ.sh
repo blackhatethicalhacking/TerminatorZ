@@ -110,14 +110,7 @@ fi
 done < urls.txt
 mv urls.txt $domain
 # Matrix effect
-echo "Exiting the Matrix for 5 seconds in:" | toilet --metal -f term -F border
-sleep 1
-echo "3" | toilet --gay -f term -F border
-sleep 1
-echo "2" | toilet --metal -f term -F border
-sleep 1
-echo "1" | toilet --gay -f term -F border
-sleep 1
+echo "Exiting the Matrix for 5 seconds:" | toilet --metal -f term -F border
 
 R='\033[0;31m'
 G='\033[0;32m'
@@ -137,4 +130,3 @@ for ((i=0; i<5; i++)); do
     echo -ne "${R}00 ${G}11 ${Y}01 ${B}10 ${P}11 ${C}00 ${W}10 ${G}01 ${P}11 ${B}00 ${Y}01 ${C}10\r"
     sleep 0.2
 done
-echo -e "\033[2J\033[?25h" # reset screen
