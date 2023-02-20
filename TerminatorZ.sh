@@ -110,7 +110,7 @@ fi
 done < urls.txt
 mv urls.txt $domain
 # Matrix effect
-echo "Exiting the Matrix for 5 seconds:" | toilet --metal -f term -F border
+echo "Entering the Matrix for 5 seconds:" | toilet --metal -f term -F border
 
 R='\033[0;31m'
 G='\033[0;32m'
