@@ -11,6 +11,30 @@
 TerminatorZ is written by Chris "SaintDruG" Abou-Chabke from Black Hat Ethical Hacking and is designed for Offensive Security attacks. 
 </p>
 
+<h1 align="center"><b>Black Hat Ethical Hacking</b></h1>
+
+<p align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=blackhatethicalhacking&show_icons=true&include_all_commits=true">
+<br>
+<br>
+</p>
+
+<!--
+**blackhatethicalhacking** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
+
+
 # Description
 
 TerminatorZ is a highly sophisticated and efficient web security tool that scans for potential vulnerabilities in your web applications. It uses a combination of advanced techniques, including using popular tools like waybackurls and curl, to scan your web applications and highlight any potential vulnerabilities. The results are displayed in an easy-to-read format in the terminal, and only vulnerable results are saved for further investigation. With its lightweight and fast nature, TerminatorZ is the perfect tool for any security professional who wants to keep their web applications secure.
