@@ -48,7 +48,12 @@ TerminatorZ is a highly sophisticated and efficient web security tool that scans
 
 TerminatorZ is special because it's a highly customized for quick and speed high priority known CVES. The script then reads each URL from urls.txt and checks for various vulnerabilities including RCE, CSRF, LFI, open redirect, Log4J, RFI, path traversal, and SQL injection. For each vulnerability, the script performs a test by sending a specific HTTP request and looking for a specific response.
 
-If the vulnerability is detected, the script will write a message to the domain.txt file indicating that the URL is vulnerable. If the vulnerability is not detected, the script will write a message indicating that the URL is not vulnerable
+If the vulnerability is detected, the script will write a message to the domain.txt file indicating that the URL is vulnerable. If the vulnerability is not detected, the script will write a message indicating that the URL is not vulnerable.
+  
+It is also Special well, because:
+  
+![giphy](https://user-images.githubusercontent.com/13942386/220471761-3c554abf-ece4-442f-84de-2b28b5f02329.gif)
+
 
 # The Flow & Methodology
 
