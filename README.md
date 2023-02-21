@@ -97,6 +97,11 @@ Scans for various web application vulnerabilities, including:
 
 • Only saves and reports vulnerabilities, making it easy to prioritize and remediate vulnerabilities in a timely manner
 
+# Expansion
+
+• Fell free to expand more Pocs, and integrate it, the idea is speed, and sending 1 curl, send a push!
+
+
 # Requirements:
 
 • waybackurls: This tool can be installed by running `go install github.com/tomnomnom/waybackurls@latest`
