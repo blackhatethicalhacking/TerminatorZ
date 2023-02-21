@@ -99,7 +99,7 @@ Scans for various web application vulnerabilities, including:
 
 # Expansion
 
-• Fell free to expand more Pocs, and integrate it, the idea is speed, and sending 1 curl, send a push!
+• Feel free to expand more Pocs, and integrate it, the idea is speed, and sending 1 curl, send a push!
 
 
 # Requirements:
