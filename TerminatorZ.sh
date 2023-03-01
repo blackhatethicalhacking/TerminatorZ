@@ -253,4 +253,5 @@ else
 fi
 done < urls.txt
 mv urls.txt $domain
+rm -rf lolcat
 echo "Targets have been T3rm1nat3d... I'll be back!" | lolcat
