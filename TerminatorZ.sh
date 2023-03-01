@@ -97,6 +97,10 @@ fi
 
 waybackurls $domain | grep -E "\.js$|\.php$|\.yml$|\.env$|\.txt$|\.xml$|\.config$" | httpx -verbose | sort -u | tee urls.txt lolcat
 
+count=$(wc -l < urls.txt)
+echo "Total URLs found: $count" | lolcat
+sleep 5
+
 while read url
 do
 
