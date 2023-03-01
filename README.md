@@ -49,6 +49,8 @@ TerminatorZ is a highly sophisticated and efficient web security tool that scans
 TerminatorZ is special because it's a highly customized for quick and speed high priority known CVES. The script then reads each URL from urls.txt and checks for various vulnerabilities including RCE, CSRF, LFI, open redirect, Log4J, RFI, path traversal, and SQL injection. For each vulnerability, the script performs a test by sending a specific HTTP request and looking for a specific response.
 
 If the vulnerability is detected, the script will write a message to the domain.txt file indicating that the URL is vulnerable. If the vulnerability is not detected, the script will write a message indicating that the URL is not vulnerable.
+
+**Total Vulnerabilities so far: 16**
   
 It is also Special well, because:
   
@@ -63,54 +65,83 @@ The tool's methodology is carefully designed to ensure that each type of vulnera
 
 In conclusion, TerminatorZ is a game-changer in the world of web security. Its combination of technology, methodology, and expert logic makes it the ultimate tool for identifying and mitigating web application vulnerabilities. Speed is sometimes needed, if you want more tools that do not focus on speed, please make sure to check our other ones :)
 
+# Latest Version & Updates:
+
+V1.1:
+
+- Enhancement in the output, Red for not vulnerable, Green for vulnerable.
+- Counts URLs before starting the attack, which gives you an estimate, based on final URLs.
+- Added 5 more new Vulnerabilities with exploits:
+
+• XSS (Cross-site scripting)
+
+• SSRF (Server-side request forgery)
+
+• XXE (XML external entity)
+
+• Insecure deserialization
+
+• Remote Code Execution via Shellshock (RCE)
+
+
 # Features:
 
 Scans for various web application vulnerabilities, including:
 
-• SQL Injection (SQLi)
+- XSS (Cross-site scripting)
 
-• Cross-Site Scripting (XSS)
+- SSRF (Server-side request forgery)
 
-• Cross-Site Request Forgery (CSRF)
+- XXE (XML external entity)
 
-• Remote Code Execution (RCE)
+- Insecure deserialization
 
-• Log4J
+- Remote Code Execution via Shellshock (RCE)
 
-• Directory Traversal (DT)
+- SQL Injection (SQLi)
 
-• File Inclusion (FI)
+- Cross-Site Scripting (XSS)
 
-• Sensitive Data Exposure (SDE)
+- Cross-Site Request Forgery (CSRF)
 
-• Server Side Request Forgery (SSRF)
+- Remote Code Execution (RCE)
 
-• Shell Injection (SI)
+- Log4J
 
-• Broken Access Control (BAC)
+- Directory Traversal (DT)
 
-• Generates Random Sun Tzu Quote for Red Teamers, Checks if you are connected to the Internet too!
+- File Inclusion (FI)
 
-• Utilizes tools such as waybackurls, curl, and others for comprehensive vulnerability assessments
+- Sensitive Data Exposure (SDE)
 
-• Lightweight and fast, delivering results in real-time directly to the terminal
+- Server Side Request Forgery (SSRF)
 
-• Only saves and reports vulnerabilities, making it easy to prioritize and remediate vulnerabilities in a timely manner
+- Shell Injection (SI)
+
+- Broken Access Control (BAC)
+
+- Generates Random Sun Tzu Quote for Red Teamers, Checks if you are connected to the Internet too!
+
+- Utilizes tools such as waybackurls, curl, and others for comprehensive vulnerability assessments
+
+- Lightweight and fast, delivering results in real-time directly to the terminal
+
+- Only reports vulnerabilities, making it easy to prioritize and remediate vulnerabilities in a timely manner
 
 # Expansion
 
-• Feel free to expand more Pocs, and integrate it, the idea is speed, and sending 1 curl, send a push!
+Feel free to expand more Pocs, and integrate it, the idea is speed, and sending 1 curl, send a push!
 
 
 # Requirements:
 
-• waybackurls: This tool can be installed by running `go install github.com/tomnomnom/waybackurls@latest`
+- waybackurls: This tool can be installed by running `go install github.com/tomnomnom/waybackurls@latest`
 
-• cURL: This tool is commonly pre-installed on Kali Linux and Ubuntu, but can be installed by running `apt-get install curl` on Ubuntu or `brew install curl` on MacOS
+- cURL: This tool is commonly pre-installed on Kali Linux and Ubuntu, but can be installed by running `apt-get install curl` on Ubuntu or `brew install curl` on MacOS
 
-• httpx: is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryable http library. To install it: `go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest`
+- httpx: is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryable http library. To install it: `go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest`
 
-• lolcat: `pip install lolcat` for rainbow beauty
+- lolcat: `pip install lolcat` for rainbow beauty
 
 # Installation
 
@@ -124,9 +155,9 @@ Scans for various web application vulnerabilities, including:
 
 # Screenshot
 
-**Main Menu**
+<img width="958" alt="menu" src="https://user-images.githubusercontent.com/13942386/222258110-a0c83c4c-80b1-4be2-83b9-06afb7b175b7.png">
 
-<img width="958" alt="Screenshot 2023-02-01 at 7 36 42 PM" src="https://user-images.githubusercontent.com/13942386/216119836-2551058d-e69c-4590-b208-ed0cc996dae6.png">
+<img width="958" alt="urls" src="https://user-images.githubusercontent.com/13942386/222258143-fc094a5f-2e83-4316-a7bd-65be1adcc704.png">
 
 
 # Compatibility: 
