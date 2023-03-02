@@ -151,7 +151,7 @@ Feel free to expand more Pocs, and integrate it, the idea is speed, and sending 
 
 `chmod +x TerminatorZ.sh`
 
-`./TerminatorZ`
+`./TerminatorZ.sh`
 
 # Screenshot
 
