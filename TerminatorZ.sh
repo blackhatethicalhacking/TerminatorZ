@@ -190,8 +190,8 @@ if [[ $response == *"vulnerable"* ]]; then
 else
   echo -e "$url is not RCE \e[31mvulnerable\e[0m"
 fi
- 
-echo "Testing $url for CSRF vulnerability..."
+
+echo -e "\e[33mTesting \e[0m${url}\e[33m for CSRF vulnerability...\e[0m"
 response=$(curl -s -X POST -d 'token=test' "$url")
 if [[ $response == *"token=test"* ]]; then
   echo -e "$url is CSRF \e[32mvulnerable\e[0m" >> "$domain/$domain.txt"
