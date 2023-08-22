@@ -18,9 +18,6 @@ TerminatorZ is written by Chris "SaintDruG" Abou-Chabke from Black Hat Ethical H
 </p>
 
 Shout out and thanks to <a href="https://github.com/shadowdevnotreal"> ShadowDevnotreal
-
-📫 How to reach me: chris@blackhatethicalhacking.com
-
 <!--
 **blackhatethicalhacking** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
