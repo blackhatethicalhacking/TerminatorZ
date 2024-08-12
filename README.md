@@ -17,7 +17,6 @@ TerminatorZ is written by Chris "SaintDruG" Abou-Chabke from Black Hat Ethical H
 <br>
 </p>
 
-Shout out and thanks to <a href="https://github.com/shadowdevnotreal"> ShadowDevnotreal
 <!--
 **blackhatethicalhacking** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -36,7 +35,7 @@ Here are some ideas to get you started:
 
 # Description
 
-TerminatorZ is a highly sophisticated and efficient web security tool that scans for potential vulnerabilities in your web applications. It uses a combination of advanced techniques, including using popular tools like waybackurls and curl, to scan your web applications and highlight any potential vulnerabilities. The results are displayed in an easy-to-read format in the terminal, and only vulnerable results are saved for further investigation. With its lightweight and fast nature, TerminatorZ is the perfect tool for any security professional who wants to keep their web applications secure.
+TerminatorZ is a highly sophisticated and efficient web security tool that scans for potential vulnerabilities in your web applications. It uses a combination of advanced techniques, including using popular tools like waybackurls and curl, to scan your web applications and highlight any potential vulnerabilities but in a passive and quick way for a quick look. The results are displayed in an easy-to-read format in the terminal, and only vulnerable results are saved for further investigation. With its lightweight and fast nature, TerminatorZ is the perfect tool for any RED Teamer.
 
 
 # What Makes TerminatorZ Unique:
@@ -45,7 +44,7 @@ TerminatorZ is special because it's a highly customized for quick and speed high
 
 If the vulnerability is detected, the script will write a message to the domain.txt file indicating that the URL is vulnerable. If the vulnerability is not detected, the script will write a message indicating that the URL is not vulnerable.
 
-**Total Vulnerabilities so far: 16**
+**Total POCs it will check so far after v2: 24**
   
 It is also Special well, because:
   
@@ -58,30 +57,66 @@ The tool starts by asking the user to input the domain they wish to scan. It the
 
 The tool's methodology is carefully designed to ensure that each type of vulnerability is checked specifically and thoroughly. The tool employs a highly analytical and methodical approach to the scanning process, which results in the identification of even the most elusive vulnerabilities. The tool's logic is designed to be highly efficient and effective, making it the ultimate choice for red team security experts and web security professionals.
 
-In conclusion, TerminatorZ is a game-changer in the world of web security. Its combination of technology, methodology, and expert logic makes it the ultimate tool for identifying and mitigating web application vulnerabilities. Speed is sometimes needed, if you want more tools that do not focus on speed, please make sure to check our other ones :)
+In conclusion, TerminatorZ offers a combination of technology, methodology, and expert logic makes it the ultimate tool for identifying and mitigating web application vulnerabilities. Speed is sometimes needed, if you want more tools that do not focus on speed, please make sure to check our other ones :)
 
 # Latest Version & Updates:
 
-V1.1:
+## Version 2.0:
+
+- Added 8 new Vulnerabilities with exploits:
+
+  • File Upload
+
+  • Command Injection
+
+  • Host Header Injection
+
+  • HTTP Parameter Pollution (HPP)
+
+  • Clickjacking
+
+  • CORS Misconfiguration
+
+  • Sensitive Data Exposure
+
+  • Session Fixation
+
+## Version 1.1:
 
 - Enhancement in the output, Red for not vulnerable, Green for vulnerable.
 - Counts URLs before starting the attack, which gives you an estimate, based on final URLs.
 - Added 5 more new Vulnerabilities with exploits:
 
-• XSS (Cross-site scripting)
+  • XSS (Cross-site scripting)
 
-• SSRF (Server-side request forgery)
+  • SSRF (Server-side request forgery)
 
-• XXE (XML external entity)
+  • XXE (XML external entity)
 
-• Insecure deserialization
+  • Insecure deserialization
 
-• Remote Code Execution via Shellshock (RCE)
+  • Remote Code Execution via Shellshock (RCE)
 
 
 # Features:
 
 Scans for various web application vulnerabilities, including:
+
+- File Upload
+
+- Command Injection
+
+- Host Header Injection
+
+- HTTP Parameter Pollution (HPP)
+
+- Clickjacking
+
+- CORS Misconfiguration
+
+- Sensitive Data Exposure
+
+- Session Fixation
 
 - XSS (Cross-site scripting)
 
@@ -127,7 +162,6 @@ Scans for various web application vulnerabilities, including:
 
 Feel free to expand more Pocs, and integrate it, the idea is speed, and sending 1 curl, send a push!
 
-
 # Requirements:
 
 - waybackurls: This tool can be installed by running `go install github.com/tomnomnom/waybackurls@latest`
@@ -137,6 +171,7 @@ Feel free to expand more Pocs, and integrate it, the idea is speed, and sending 
 - httpx: is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryable http library. To install it: `go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest`
 
 - lolcat: `pip install lolcat` for rainbow beauty
+- You also need, toilet, fortune-mod but the new update will install them in the beginning.
 
 # Installation
 
@@ -150,9 +185,9 @@ Feel free to expand more Pocs, and integrate it, the idea is speed, and sending 
 
 # Screenshot
 
-<img width="958" alt="menu" src="https://user-images.githubusercontent.com/13942386/222258110-a0c83c4c-80b1-4be2-83b9-06afb7b175b7.png">
-
-<img width="958" alt="urls" src="https://user-images.githubusercontent.com/13942386/222258143-fc094a5f-2e83-4316-a7bd-65be1adcc704.png">
+![One](https://github.com/user-attachments/assets/61214770-9840-47ce-9d9c-a75b5d14d24f)
+![Two](https://github.com/user-attachments/assets/d3f89e26-59a9-43d9-ac0e-e3118539ce21)
+![Three](https://github.com/user-attachments/assets/a6220871-c9cb-4f2a-ab30-b97379ef92fa)
 
 
 # Compatibility: 
