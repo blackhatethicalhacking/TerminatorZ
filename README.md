@@ -59,45 +59,6 @@ The tool's methodology is carefully designed to ensure that each type of vulnera
 
 In conclusion, TerminatorZ offers a combination of technology, methodology, and expert logic makes it the ultimate tool for identifying and mitigating web application vulnerabilities. Speed is sometimes needed, if you want more tools that do not focus on speed, please make sure to check our other ones :)
 
-# Latest Version & Updates:
-
-## Version 2.0:
-
-- Added 8 new Vulnerabilities with exploits:
-
-  • File Upload
-
-  • Command Injection
-
-  • Host Header Injection
-
-  • HTTP Parameter Pollution (HPP)
-
-  • Clickjacking
-
-  • CORS Misconfiguration
-
-  • Sensitive Data Exposure
-
-  • Session Fixation
-
-## Version 1.1:
-
-- Enhancement in the output, Red for not vulnerable, Green for vulnerable.
-- Counts URLs before starting the attack, which gives you an estimate, based on final URLs.
-- Added 5 more new Vulnerabilities with exploits:
-
-  • XSS (Cross-site scripting)
-
-  • SSRF (Server-side request forgery)
-
-  • XXE (XML external entity)
-
-  • Insecure deserialization
-
-  • Remote Code Execution via Shellshock (RCE)
-
-
 # Features:
 
 Scans for various web application vulnerabilities, including:
@@ -193,6 +154,44 @@ Feel free to expand more Pocs, and integrate it, the idea is speed, and sending 
 # Compatibility: 
 
 This tool has been tested on Kali Linux, Ubuntu and MacOS.
+
+# Latest Version & Updates:
+
+## Version 2.0:
+
+- Added 8 new Vulnerabilities with exploits:
+
+  • File Upload
+
+  • Command Injection
+
+  • Host Header Injection
+
+  • HTTP Parameter Pollution (HPP)
+
+  • Clickjacking
+
+  • CORS Misconfiguration
+
+  • Sensitive Data Exposure
+
+  • Session Fixation
+
+## Version 1.1:
+
+- Enhancement in the output, Red for not vulnerable, Green for vulnerable.
+- Counts URLs before starting the attack, which gives you an estimate, based on final URLs.
+- Added 5 more new Vulnerabilities with exploits:
+
+  • XSS (Cross-site scripting)
+
+  • SSRF (Server-side request forgery)
+
+  • XXE (XML external entity)
+
+  • Insecure deserialization
+
+  • Remote Code Execution via Shellshock (RCE)
 
 # To Do
 
