@@ -119,6 +119,13 @@ Scans for various web application vulnerabilities, including:
 
 - Only reports vulnerabilities, making it easy to prioritize and remediate vulnerabilities in a timely manner
 
+# Screenshot
+
+![One](https://github.com/user-attachments/assets/61214770-9840-47ce-9d9c-a75b5d14d24f)
+![Two](https://github.com/user-attachments/assets/d3f89e26-59a9-43d9-ac0e-e3118539ce21)
+![Three](https://github.com/user-attachments/assets/a6220871-c9cb-4f2a-ab30-b97379ef92fa)
+
+
 # Expansion
 
 Feel free to expand more Pocs, and integrate it, the idea is speed, and sending 1 curl, send a push!
@@ -143,13 +150,6 @@ Feel free to expand more Pocs, and integrate it, the idea is speed, and sending 
 `chmod +x TerminatorZ.sh`
 
 `./TerminatorZ.sh`
-
-# Screenshot
-
-![One](https://github.com/user-attachments/assets/61214770-9840-47ce-9d9c-a75b5d14d24f)
-![Two](https://github.com/user-attachments/assets/d3f89e26-59a9-43d9-ac0e-e3118539ce21)
-![Three](https://github.com/user-attachments/assets/a6220871-c9cb-4f2a-ab30-b97379ef92fa)
-
 
 # Compatibility: 
 
